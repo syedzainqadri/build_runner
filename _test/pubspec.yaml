@@ -1,0 +1,47 @@
+name: _test
+publish_to: none
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dev_dependencies:
+  analyzer: ">=1.0.0 <6.0.0"
+  build: any
+  build_config: any
+  build_modules: any
+  build_vm_compilers: any
+  build_web_compilers: any
+  build_runner: any
+  build_runner_core: any
+  build_test: any
+  lints: '>=1.0.0 <3.0.0'
+  io: ^1.0.0
+  path: ^1.8.0
+  provides_builder:
+    path: pkgs/provides_builder/
+  test: ^1.16.0
+  test_process: ^2.0.0
+
+dependency_overrides:
+  build:
+    path: ../build
+  build_config:
+    path: ../build_config
+  build_daemon:
+    path: ../build_daemon
+  build_modules:
+    path: ../build_modules
+  build_resolvers:
+    path: ../build_resolvers
+  build_runner:
+    path: ../build_runner
+  build_runner_core:
+    path: ../build_runner_core
+  build_test:
+    path: ../build_test
+  build_vm_compilers:
+    path: ../build_vm_compilers
+  build_web_compilers:
+    path: ../build_web_compilers
+  scratch_space:
+    path: ../scratch_space
